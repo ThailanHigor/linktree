@@ -74,7 +74,7 @@ table {
 
 .center_container p{
     color:#fff;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: 200;
     line-height: 27px;
@@ -86,7 +86,7 @@ strong{
 
 .logo{
     width: 150px;
-    padding-top: 100px;
+    padding-top: 55px;
 }
 
 .container_buttons{
@@ -102,7 +102,7 @@ strong{
 
 .container_buttons a{
     background-color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     height: 48px;
     display: flex;    
@@ -149,11 +149,16 @@ strong{
 }
 
 
-@media screen and (min-width: 378px) {
-    .container_buttons{
-      
+@media (max-width: 321px){
+    .footer_image{
+        position: initial;
     }
-    .container_buttons a{
 
+    .container_buttons{
+        margin-bottom: 60px;
+    }
+
+    .logo {
+        padding-top: 30px;
     }
   }
