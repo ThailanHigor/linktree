@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&display=swap');
+
+:root {
+    --primary-color:#00A327;
+    --second-color:#0d0d0d;
+    --third-color:#80E400;
+    --light-color:#BDFB00;
+    --white: #fff;
+    --text-color: #0d0d0d;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body, html {
+	line-height: 1;
+    font-family: 'Mulish', sans-serif;
+    color: var(--text-color);
+    background: var(--second-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.center{
+    margin: 0px auto;
+    height: 100%;
+    width: 100%;
+    max-width: 680px;
+}
+
+.center_container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0px 30px;
+}
+
+.center_container p{
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    line-height: 27px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.logo{
+    width: 150px;
+    padding-top: 100px;
+}
+
+.container_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 80px;
+    max-width: 370px;
+    width: 100%;
+}
+
+.container_buttons a{
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 48px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s all;
+    color: #0d0d0d;
+}
+
+.container_buttons a:hover{
+    transform: scale(1.05);
+}
+
+.container_buttons a img{
+    width: 100%;
+    content: '';
+    background: url('/assets/images/logo-simbolo-preto.png') no-repeat 0 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+.container_buttons a>span{
+    font-weight: 500
+}
+
+.container_buttons .skin_button_green{
+    background-color: #80E400;
+    font-weight: 700;
+}
+
+.footer_image{
+    position: absolute;
+    bottom: 0px;
+    width: 192px;
+}
+
+
+@media screen and (min-width: 378px) {
+    .container_buttons{
+      
+    }
+    .container_buttons a{
+
+    }
+  }
